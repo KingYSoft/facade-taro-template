@@ -27,3 +27,14 @@
 └── package.json
 └── tsconfig.json                   ts配置文件
 ```
+
+### 使用
+
+使用 dotnet 命令，需要安装 dotnet core sdk https://dotnet.microsoft.com/download
+
+安装 facade 命令工具，dotnet tool install --global Facade.ToolCLI
+使用命令构建项目 facade init mydemo -t taro
+
+### 主题
+
+可以在 src/custom-variables.scss 中修改主题样式
