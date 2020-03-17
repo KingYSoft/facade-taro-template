@@ -45,6 +45,12 @@ const mapDispatchToProps = () => ({})
 
 @connect(mapStateToProps, mapDispatchToProps)
 class Index extends Component {
+  async componentWillMount() {
+    console.log('index load')
+    const res = await Taro.getSystemInfo()
+    console.log(res)
+  }
+
   componentWillReceiveProps(nextProps: IProps) {
     console.log(this.props, nextProps)
   }
