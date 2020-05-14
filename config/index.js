@@ -42,6 +42,32 @@ const config = {
   },
   defineConstants: {},
   mini: {
+    commonChunks(commonChunks) {
+      commonChunks.push('vendors-tarojs')
+      return commonChunks
+    },
+    webpackChain(chain, webpack) {
+      chain.merge({
+        optimization: {
+          splitChunks: {
+            cacheGroups: {
+              tarojs: {
+                name: 'vendors-tarojs',
+                priority: 1000,
+                test(module) {
+                  // console.log(module.context.replace(/\\/g, '/'))
+                  const context = module.context.replace(/\\/g, '/')
+                  return /node_modules[\\/]@tarojs/.test(context)
+                },
+              },
+            },
+          },
+        },
+      })
+      // chain
+      //   .plugin('analyzer')
+      //   .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin, [])
+    },
     postcss: {
       autoprefixer: {
         enable: true,

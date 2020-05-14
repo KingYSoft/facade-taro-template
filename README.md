@@ -38,3 +38,8 @@
 ### 主题
 
 可以在 src/custom-variables.scss 中修改主题样式
+
+### 说明
+
+"regenerator-runtime": "0.11.1"
+"eslint": "^6.0.0",
