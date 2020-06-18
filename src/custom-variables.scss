@@ -1,0 +1,27 @@
+// 变量定义
+
+$color-brand: #03a9ac !important;
+$color-brand-light: #5ccccd !important;
+$color-brand-dark: #03a9ac !important;
+
+/* Link */
+$color-link: #03a9ac !important;
+$color-link-hover: #5ccccd !important;
+$color-link-active: #03a9ac !important;
+$color-link-disabled: #bfbfbf !important;
+
+/* Text Color */
+$color-text-base: #333 !important; // 文字的基本色
+$color-text-base-inverse: #fff !important; // 反色
+$color-text-secondary: #888888 !important; // 辅助色
+$color-text-placeholder: #c9c9c9 !important;
+$color-text-disabled: #ccc !important;
+$color-text-title: #2c405a !important; // 文章标题
+$color-text-paragraph: #3f536e !important; // 文章段落
+
+$box-shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.08),
+  0 9px 28px 0px rgba(0, 0, 0, 0.05), 0 12px 48px 16px rgba(0, 0, 0, 0.03) !important;
+
+@import '~taro-ui/dist/style/variables/default.scss';
+
+// https://github.com/NervJS/taro-ui/blob/dev/src/style/variables/default.scss

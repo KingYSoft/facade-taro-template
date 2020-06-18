@@ -10,6 +10,7 @@
 ├── src                             源码目录
 |   ├── components                  公共组件目录
 |   ├── iamges                      公共图片目录
+|   ├── models                      公共类型实体
 |   ├── pages                       页面文件目录
 |   |   ├── index                   index 页面目录
 |   |   |   ├── banner              页面 index 私有组件
@@ -20,10 +21,11 @@
 |   |   ├── constants               constants目录
 |   |   ├── reducers                reducers目录
 |   |   ├── types                   types目录，redux类型
-|   ├── store                       store配置目录
-|   ├── utils                       公共方法库
+|   |   ├── store                   store配置目录
+|   ├── services                    公共服务方法库
 |   ├── app.scss                    项目总通用样式
 |   └── app.tsx                     项目入口文件
+|   ├── custom-variables.scss       公共sass变量
 └── package.json
 └── tsconfig.json                   ts配置文件
 ```
@@ -41,5 +43,5 @@
 
 ### 说明
 
-"regenerator-runtime": "0.11.1"
-"eslint": "^6.0.0",
+- "regenerator-runtime": "0.11.1"
+- "eslint": "^6.0.0",

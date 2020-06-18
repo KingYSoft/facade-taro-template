@@ -3,7 +3,7 @@ import { Provider } from '@tarojs/redux'
 
 import Index from './pages/index'
 
-import configStore from './store'
+import configStore from './redux/store'
 
 import './app.scss'
 

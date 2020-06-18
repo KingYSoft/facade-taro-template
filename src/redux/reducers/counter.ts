@@ -1,10 +1,10 @@
 import { ADD, MINUS } from '../constants/counter'
+import { NumStore, INITIAL_STATE } from '../types/counter'
 
-const INITIAL_STATE = {
-  num: 0,
-}
-
-export default function counter(state = INITIAL_STATE, action) {
+export default function counter(
+  state: NumStore = INITIAL_STATE,
+  action,
+): NumStore {
   switch (action.type) {
     case ADD:
       return {
