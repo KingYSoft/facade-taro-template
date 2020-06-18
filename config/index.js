@@ -2,7 +2,7 @@
 /* eslint-disable */
 
 const path = require('path')
-env = process.env.TARO_ENV
+const env = process.env.TARO_ENV
 
 const config = {
   projectName: 'FacadeCompanyName.FacadeProjectName',
@@ -40,6 +40,7 @@ const config = {
       ],
     ],
   },
+  plugins: ['@tarojs/plugin-sass', '@tarojs/plugin-terser'],
   defineConstants: {},
   mini: {
     commonChunks(commonChunks) {
